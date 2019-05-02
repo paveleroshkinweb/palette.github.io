@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.dots {
+    position: relative;
+    right: 1%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 1%;
+}
+
+.title > span {
+    position: relative;
+    left: 25%;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.tools-colors-bar > div {
+    width: 228px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    margin-left: 70px;
+}
+
+.tools {
+    height: 246px;
+}
+
+.colors > ul, .tools > ul {
+    width: 100%;
+    height: 100%;
+}
+
+.colors li, .tools li {
+    display: flex;
+    align-items: center;
+    padding: 21px;   
+}
+
+.colors span, .tools span {
+    position: relative;
+    left: 20px;
+}
+
+.colors {
+    height: 128px;
+    margin-top: 50px;
+}
+
+.colors li {
+    padding: 19px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #C4C4C4; 
+}
+
+input[type="color"] {
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+.colors li:hover, .tools li:hover {
+    background: rgb(172, 163, 163);
+    color: rgb(252, 244, 244);
+}
+
+.colors li:nth-child(1), .tools li:nth-child(2) {
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.12);
+}
+
+.figures-bar {
+    margin-right: 70px;
+}
+
+.figure {
+    width: 170px;
+    height: 170px;
+    border: 1px solid white;
+    background: #C4C4C4;
+    display: inline-block;
+    margin-right: 2px;
+    transition-duration: .3s;
+}
+
+.paint-bucket-cursor {
+    cursor: url("../image/bucket.png"), auto;
+}
+
+.choose-color-cursor {
+    cursor: url("../image/pipette.png"), auto;
+}
+
+.move-cursor {
+    cursor: url("../image/move-icon.png"), auto;
+}
+
+.transform-cursor {
+    cursor: url("../image/transform.png"), autol
+}
+
+.active {
+    background: rgb(255, 111, 111);
+    color: rgb(255, 255, 255);
+}
+
+.circle-figure {
+    border-radius: 50%;
+    
+}
+
+.half-opacity {
+    opacity: .5;
+}
+
+.little-opacity {
+    opacity: .7;
+}
